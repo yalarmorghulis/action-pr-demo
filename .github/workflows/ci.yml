@@ -1,6 +1,9 @@
 ---
 name: CI Demo
-on: [push, pull_request, workflow_dispatch]
+on:
+  pull_request:
+    types:[opened, synchronize, reopened]
+  push:
 
 jobs:
   lint:
