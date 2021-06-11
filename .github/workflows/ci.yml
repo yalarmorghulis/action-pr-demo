@@ -14,4 +14,4 @@ jobs:
       # we need git client so we can git clone repo
       - name: Sleep for a while
         run: |
-          sleep 3
+          sleep 60
