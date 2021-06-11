@@ -2,11 +2,10 @@
 name: CI Demo
 
 on:
+  workflow_dispatch:
   push:
   pull_request:
     types: [opened, synchronize, reopened]
-  pull_request_review:
-    types: [submitted]
 
 jobs:
   lint:
