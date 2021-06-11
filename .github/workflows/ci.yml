@@ -3,7 +3,8 @@ name: CI Demo
 on:
   pull_request:
     types:[opened, synchronize, reopened]
-  push
+  push:
+    types:[]
 
 jobs:
   lint:
