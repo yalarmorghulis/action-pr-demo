@@ -1,0 +1,16 @@
+---
+name: CI Demo
+
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      # we need git client so we can git clone repo
+      - name: Sleep for a while
+        run: |
+          sleep 3
